@@ -67,5 +67,9 @@ cart
 end
 
 def checkout(cart, coupons)
+  counter= 0 
+while counter < cart.length 
+  
+  
 
 end
