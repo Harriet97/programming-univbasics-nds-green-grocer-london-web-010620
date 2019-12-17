@@ -59,12 +59,11 @@ def apply_clearance(cart)
 clearanced_cart = []
 counter = 0 
   while counter < cart.length 
-  item = apply_coupons(cart, coupons)
-  if item[counter][:clearance => true]
-    new_price_item = item[counter][:price] * 0.8.float
+  if cart[counter][:clearance]
+    new_price_item = cart[counter][:price] * 0.8.float
     clearanced_cart += new_price_item
   else 
-    clearanced_cart += item[counter][:price].float 
+    clearanced_cart += cart[counter][:price].float 
   end 
   counter += 1 
   end 
