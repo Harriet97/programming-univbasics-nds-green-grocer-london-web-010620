@@ -60,7 +60,7 @@ clearanced_cart = []
 counter = 0 
   while counter < cart.length 
   if cart[counter][:clearance]
-    new_price_item = cart[counter][:price] * 0.8.float
+    cart[counter][:price] = cart[counter][:price] - (cart[counter][:price]*0.2)
     clearanced_cart += new_price_item
   else 
     clearanced_cart += cart[counter][:price].float 
