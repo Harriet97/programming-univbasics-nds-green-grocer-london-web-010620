@@ -61,9 +61,6 @@ counter = 0
   while counter < cart.length 
   if cart[counter][:clearance]
     cart[counter][:price] = (cart[counter][:price] - (cart[counter][:price] * 0.20)).round(2)
-    clearanced_cart += new_price_item
-  else 
-    clearanced_cart += cart[counter][:price].float 
   end 
   counter += 1 
   end 
