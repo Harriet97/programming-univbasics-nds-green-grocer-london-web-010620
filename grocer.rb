@@ -61,8 +61,8 @@ counter = 0
   while counter < cart.length 
   item = apply_coupons(cart, coupons)
   if item[:clearance => true]
-    item 
-  clearanced_cart += 
+    new_price_item = item * 0.8 
+  clearanced_cart += new_price_item
   counter += 1 
   end 
 clearanced_cart
