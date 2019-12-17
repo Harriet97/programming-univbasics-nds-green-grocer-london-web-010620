@@ -56,9 +56,16 @@ cart
 end
 
 def apply_clearance(cart)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
+clearanced_cart = []
+counter = 0 
+  while counter < cart.length 
+  item = apply_coupons(cart, coupons)
+  if item[:clearance => true]
+    item 
+  clearanced_cart += 
+  counter += 1 
+  end 
+clearanced_cart
 end
 
 def checkout(cart, coupons)
