@@ -73,6 +73,6 @@ def checkout(cart, coupons)
     total += consolidate_cart(cart)[:price]
     counter += 1
   end 
-  
+  total
 
 end
